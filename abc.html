@@ -1,0 +1,215 @@
+<script>
+/*
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5     Pattern*/
+    // let a=5
+    // function abc(a){
+    // for(let i = 1; i<= a; i++){
+    //     for(let j = 1; j<=i; j++){
+    //         document.write(i," ")
+    //     }
+    //     document.write("<br>")
+    // }
+    // }
+    // abc(a)
+
+/*
+*
+* *
+* * *
+* * * *
+* * * * *      pattern*/
+    // let a=5
+    // function abc(a){
+    // for(let i = 1; i<= a; i++){
+    //     for(let j = 1; j<=i; j++){
+    //         document.write("*"," ")
+    //     }
+    //     document.write("<br>")
+    // }
+    // }
+    // abc(a)
+
+/*
+* * * * *
+* * * *
+* * *
+* *
+*                pattern*/
+    // let a = 5
+    // function def(a){
+    // for(let i = 1; i<= a; i++){
+    //     for(let j = 1; j<=(a-i+1); j++){
+    //         document.write("*"," ")
+    //     }
+    //     document.write("<br>")
+    // }
+    // }
+    // def(a)
+
+/*
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+*/
+    // let a = 5
+    // function def(a){
+    // for(let i = 1; i<= a; i++){
+    //     for(let j = 1; j<=(a-i+1); j++){
+    //         document.write("_ ")
+    //     }
+    //     for(let k = 1; k<=i; k++){
+    //         document.write("*"," ")
+    //     }
+    //     document.write("<br>")
+    // }
+    // }
+    // def(a)
+
+/*
+ * * * * *
+   * * * *
+     * * *
+       * *
+         * 
+*/ 
+    // let a = 5
+    // function def(a){
+    // for(let i = 1; i<= a; i++){
+    //     for(let j = 1; j<=i; j++){
+    //         document.write("_ ")
+    //     }
+    //     for(let k = 1; k<=(a-i+1); k++){
+    //         document.write("*"," ")
+    //     }
+    //     document.write("<br>")
+    // }
+    // }
+    // def(a)
+
+/*
+11 12 13 14 15
+21 22 23 24 25
+31 32 33 34 35
+41 42 43 44 45
+51 52 53 54 55
+*/ 
+    // let a = 5
+    // function def(a){
+    //     let b = 10
+    //     for(let i = 1; i<=a; i++){
+    //         c=1
+    //         for(let j = 1; j<=a; j++){
+    //             b+=j
+    //             document.write(b," ")
+    //             b-=j
+    //         }
+    //         document.write('<br>')
+    //         b += 10
+    //     }
+    // }
+    // def(a)
+
+/*
+* * * * *
+*       *
+*       *
+*       *
+* * * * *
+*/ 
+    // let a = 5
+    //     function def(a) {
+    //         for (let i = 1; i <= a; i++) {
+    //             for (let j = 1; j <= a; j++) {
+    //                 if (j == 1 || j == a) {
+    //                     document.write("* ")
+    //                 }
+    //                 else if (j > 1 && j < a) {
+    //                     if (i == 1 || i == a) {
+    //                         document.write("* ")
+    //                     } else {
+    //                         document.write("_ ")
+    //                     }
+    //                 }
+    //             }
+    //             document.write("<br>")
+    //         }
+    //     }
+    //     def(a)
+
+/*
+_ * * * * * * * * * *
+_ _ * * * * * * * *
+_ _ _ * * * * * *
+_ _ _ _ * * * *
+_ _ _ _ _ * *
+*/ 
+        // let a = 5
+        //     function def(a) {
+        //         for (let i = 1; i <= a; i++) {
+        //             for (let j = 1; j <= i; j++) {
+        //                 document.write("_ ")
+        //             }
+        //             for (let k = 1; k <= (a - i + 1); k++) {
+        //                 document.write("*", " ")
+        //             }
+        //             for (let j = 1; j <= (a - i + 1); j++) {
+        //                 document.write("* ")
+
+        //             }
+        //             document.write("<br>")
+        //         }
+        //     }
+        //     def(a)
+
+/*
+_*****_
+__***__
+___*___
+__***__
+_*****_
+*/ 
+let n=11;
+let j=0;
+for(let i=0;i<n;i++){
+    let b='';
+    for(let k=0;k<=j;k++){
+        b+='_'
+    }
+    for(let l=1;l<=(n-j-j);l++){
+        b+='*'
+    }
+     for(let k=0;k<=j;k++){
+         b+='_'
+    }
+    document.write(b)
+    if(i%n < Math.floor(n/2)){
+        j++;
+    }else{
+        j--;
+    }
+    document.write("<br>")
+}
+
+// let n = 4
+// let m = 3
+// let sum = 0
+// for(let i = 1; i <= n; i++){
+//   for(let j = 1; j <= m; j++){
+//     if(j>1){
+//       sum += n
+//     }else{
+//       sum = i
+//     }
+//     document.write(sum," ")
+//   }
+//   document.write('<br>')
+//   sum = 0
+// }
+
+</script>
